@@ -6,7 +6,7 @@
 /*   By: bmoudach <bmoudach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/03 10:57:46 by bmoudach          #+#    #+#             */
-/*   Updated: 2023/08/25 22:53:59 by bmoudach         ###   ########.fr       */
+/*   Updated: 2023/09/25 20:40:27 by bmoudach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,18 @@
 # define LIBFT_H
 
 # ifndef BUFFER_SIZE
-#   define BUFFER_SIZE 5
+#  define BUFFER_SIZE 5
 # endif
 
-#  include <fcntl.h>
-#  include <stdarg.h>
-#  include <stddef.h>
-#  include <stdio.h>
-#  include <stdlib.h>
-#  include <string.h>
-#  include <sys/stat.h>
-#  include <sys/types.h>
-#  include <unistd.h>
+# include <fcntl.h>
+# include <stdarg.h>
+# include <stddef.h>
+# include <stdio.h>
+# include <stdlib.h>
+# include <string.h>
+# include <sys/stat.h>
+# include <sys/types.h>
+# include <unistd.h>
 
 int		ft_isalnum(int argument);
 int		ft_isalpha(int c);
@@ -70,5 +70,8 @@ int		ft_put_unsigned(unsigned int nb, int *len);
 int		ft_putptr(unsigned long nb, int *len);
 int		*ft_putnbr(int n, int *len);
 int		*ft_puthexa(unsigned int nb, char c, int *len);
+int		ft_last_index(char **array);
+int		free_tab(char **tab);
+int		free_third_tab(char ***tab);
 
-# endif
+#endif
