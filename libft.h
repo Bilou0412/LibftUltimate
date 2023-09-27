@@ -6,7 +6,7 @@
 /*   By: bmoudach <bmoudach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/03 10:57:46 by bmoudach          #+#    #+#             */
-/*   Updated: 2023/09/25 20:40:27 by bmoudach         ###   ########.fr       */
+/*   Updated: 2023/09/26 03:47:40 by bmoudach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,6 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 char	*ft_strtrim(char const *s1, char const *set);
-char	*get_next_line(int fd, int *error);
 void	*ft_memmove(void *dst, const void *src, size_t num);
 void	*ft_memcpy(void *dst, const void *src, size_t num);
 void	*ft_memchr(const void *s, int c, size_t n);
@@ -71,7 +70,11 @@ int		ft_putptr(unsigned long nb, int *len);
 int		*ft_putnbr(int n, int *len);
 int		*ft_puthexa(unsigned int nb, char c, int *len);
 int		ft_last_index(char **array);
-int		free_tab(char **tab);
-int		free_third_tab(char ***tab);
+int		ft_free_tab(char **tab);
+int		ft_free_third_tab(char ***tab);
+int		ft_print_tab(char **tab);
+int		ft_print_third_tab(char ***tab);
+char	*get_next_line(int fd);
+char	*ft_strjoin_gnl(char *s1, char *s2);
 
 #endif
